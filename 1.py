@@ -46,3 +46,6 @@ d = pd.DataFrame(a)
 print(d)
 print(d.loc[0])
 print(d.loc[[0, 1]])
+
+e = pd.DataFrame(a, index=["day1", "day2", "day3"])
+print(e)
