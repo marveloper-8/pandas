@@ -51,5 +51,5 @@ e = pd.DataFrame(a, index=["day1", "day2", "day3"])
 print(e)
 print(e.loc["day2"])
 
-# f = pd.read_csv('movies.csv')
-# print(f)
+f = pd.read_csv('data.csv')
+print(f)
