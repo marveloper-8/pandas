@@ -49,3 +49,7 @@ print(d.loc[[0, 1]])
 
 e = pd.DataFrame(a, index=["day1", "day2", "day3"])
 print(e)
+print(e.loc["day2"])
+
+# f = pd.read_csv('movies.csv')
+# print(f)
