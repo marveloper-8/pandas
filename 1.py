@@ -60,3 +60,7 @@ a = pd.read_csv('data.csv')
 print(a.to_string())
 print(a)
 print(pd.options.display.max_rows)
+
+pd.options.display.max_rows = 9999
+b = pd.read_csv('data.csv')
+print(b)
