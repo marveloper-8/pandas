@@ -122,8 +122,11 @@ a = pd.read_csv('dirtydata.csv')
 b = a.dropna()
 print(b.to_string())
 
-a["Calories"].fillna(130, inplace = True)
-print(a)
+c = a["Calories"].mean()
+a["Calories"].fillna(c, inplace = True)
+
+# a["Calories"].fillna(130, inplace = True)
+# print(a)
 
 # a.fillna(130, inplace = True)
 # print(a)
