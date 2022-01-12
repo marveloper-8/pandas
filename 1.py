@@ -113,4 +113,4 @@ import pandas as pd
 a = pd.read_csv('data.csv')
 print(a.head(10))
 print(a.head()) 
-print(a.tail())
+print(a.tail()) 
