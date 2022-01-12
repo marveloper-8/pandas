@@ -122,5 +122,5 @@ a = pd.read_csv('dirtydata.csv')
 b = a.dropna()
 print(b.to_string())
 
-# a.dropna(inplace = True)
-# print(a.to_string())
+a.dropna(inplace = True)
+print(a.to_string())
