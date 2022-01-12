@@ -44,3 +44,5 @@ a = {
 }
 d = pd.DataFrame(a)
 print(d)
+
+print(d.loc[0])
