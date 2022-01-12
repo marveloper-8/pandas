@@ -108,10 +108,19 @@
 # c = pd.DataFrame(b)
 # print(c)
 
+# import pandas as pd
+
+# a = pd.read_csv('data.csv')
+# print(a.head(10))
+# print(a.head()) 
+# print(a.tail()) 
+# print(a.info())
+
 import pandas as pd
 
-a = pd.read_csv('data.csv')
-print(a.head(10))
-print(a.head()) 
-print(a.tail()) 
-print(a.info())
+a = pd.read_csv('dirtydata.csv')
+b = a.dropna()
+print(b.to_string())
+
+# a.dropna(inplace = True)
+# print(a.to_string())
