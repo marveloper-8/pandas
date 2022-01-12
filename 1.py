@@ -36,20 +36,25 @@
 # j = pd.DataFrame(g)
 # print(j)
 
+# import pandas as pd
+
+# a = {
+#     "b": [420, 380, 390],
+#     "c": [50, 40, 45]
+# }
+# d = pd.DataFrame(a)
+# print(d)
+# print(d.loc[0])
+# print(d.loc[[0, 1]])
+
+# e = pd.DataFrame(a, index=["day1", "day2", "day3"])
+# print(e)
+# print(e.loc["day2"])
+
+# f = pd.read_csv('data.csv')
+# print(f)
+
 import pandas as pd
 
-a = {
-    "b": [420, 380, 390],
-    "c": [50, 40, 45]
-}
-d = pd.DataFrame(a)
-print(d)
-print(d.loc[0])
-print(d.loc[[0, 1]])
-
-e = pd.DataFrame(a, index=["day1", "day2", "day3"])
-print(e)
-print(e.loc["day2"])
-
-f = pd.read_csv('data.csv')
-print(f)
+a = pd.read_csv('data.csv')
+print(a.to_string())
