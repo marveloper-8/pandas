@@ -122,10 +122,11 @@ a = pd.read_csv('dirtydata.csv')
 b = a.dropna()
 print(b.to_string())
 
-# a["Calories"].fillna(130, inplace = True)
-
-a.fillna(130, inplace = True)
+a["Calories"].fillna(130, inplace = True)
 print(a)
+
+# a.fillna(130, inplace = True)
+# print(a)
 
 # a.dropna(inplace = True)
 # print(a.to_string())
