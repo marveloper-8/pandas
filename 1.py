@@ -187,5 +187,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 a = pd.read_csv('data2.csv')
-a.plot(kind='scatter', x='Duration', y='Maxpulse')
+# a.plot(kind='scatter', x='Duration', y='Maxpulse')
+a['Duration'].plot(kind='hist')
 plt.show()
