@@ -144,9 +144,15 @@
 # a.dropna(inplace = True)
 # print(a.to_string())
 
+# import pandas as pd
+
+# a = pd.read_csv('dirtydata.csv')
+# a['Date'] = pd.to_datetime(a['Date'])
+# a.dropna(subset=['Date'], inplace=True)
+# print(a.to_string())
+
 import pandas as pd
 
 a = pd.read_csv('dirtydata.csv')
-a['Date'] = pd.to_datetime(a['Date'])
-a.dropna(subset=['Date'], inplace=True)
+a.loc[7, 'Duration'] = 45
 print(a.to_string())
