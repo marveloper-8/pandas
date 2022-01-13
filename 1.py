@@ -157,9 +157,15 @@ a = pd.read_csv('dirtydata.csv')
 
 for b in a.index:
     if a.loc[b, 'Duration'] > 120:
-        a.loc[b, 'Duration'] = 120
+        a.drop(b, inplace=True)
 
 print(a.to_string())
+
+# for b in a.index:
+#     if a.loc[b, 'Duration'] > 120:
+#         a.loc[b, 'Duration'] = 120
+
+# print(a.to_string())
 
 # a.loc[7, 'Duration'] = 45
 # print(a.to_string())
