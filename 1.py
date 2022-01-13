@@ -178,7 +178,14 @@
 # a.drop_duplicates(inplace=True)
 # print(a.to_string())
 
-import pandas as pd
+# import pandas as pd
 
-a = pd.read_csv('data1.csv')
-print(a.corr())
+# a = pd.read_csv('data1.csv')
+# print(a.corr())
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+a = pd.read_csv('data2.csv')
+a.plot()
+plt.show()
