@@ -120,13 +120,13 @@ import pandas as pd
 
 a = pd.read_csv('dirtydata.csv')
 
-# b = a["Calories"].mode()[0]
-# a["Calories"].fillna(b, inplace = True)
-# print(a)
+b = a["Calories"].mode()[0]
+a["Calories"].fillna(b, inplace = True)
+print(a)
 
-c = a["Calories"].median()
-a["Calories"].fillna(c, inplace = True)
-print(a.to_string())
+# c = a["Calories"].median()
+# a["Calories"].fillna(c, inplace = True)
+# print(a.to_string())
 
 # b = a.dropna()
 # print(b.to_string())
