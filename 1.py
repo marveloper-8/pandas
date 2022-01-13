@@ -148,4 +148,5 @@ import pandas as pd
 
 a = pd.read_csv('dirtydata.csv')
 a['Date'] = pd.to_datetime(a['Date'])
+a.dropna(subset=['Date'], inplace=True)
 print(a.to_string())
