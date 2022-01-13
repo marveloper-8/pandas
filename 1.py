@@ -170,10 +170,15 @@
 # a.loc[7, 'Duration'] = 45
 # print(a.to_string())
 
+# import pandas as pd
+
+# a = pd.read_csv('dirtydata.csv')
+# print(a.duplicated())
+
+# a.drop_duplicates(inplace=True)
+# print(a.to_string())
+
 import pandas as pd
 
-a = pd.read_csv('dirtydata.csv')
-print(a.duplicated())
-
-a.drop_duplicates(inplace=True)
-print(a.to_string())
+a = pd.read_csv('data1.csv')
+print(a.corr())
