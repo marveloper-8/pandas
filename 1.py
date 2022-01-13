@@ -154,5 +154,12 @@
 import pandas as pd
 
 a = pd.read_csv('dirtydata.csv')
-a.loc[7, 'Duration'] = 45
+
+for b in a.index:
+    if a.loc[b, 'Duration'] > 120:
+        a.loc[b, 'Duration'] = 120
+
 print(a.to_string())
+
+# a.loc[7, 'Duration'] = 45
+# print(a.to_string())
